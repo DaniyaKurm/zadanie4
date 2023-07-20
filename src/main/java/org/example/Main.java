@@ -12,13 +12,12 @@ public class Main {
 
         System.out.println(actual);
 
-
         amount = 1_000_000;
         registered = true;
         expected = 500;
 
         actual = service.calculate(amount, registered);
 
-System.out.println(actual);
+        System.out.println(actual);
     }
 }

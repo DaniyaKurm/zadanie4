@@ -1,6 +1,5 @@
-package org.example;
-
 public class Main {
+
     public static void main(String[] args) {
         BonusService service = new BonusService();
 
@@ -19,5 +18,22 @@ public class Main {
         actual = service.calculate(amount, registered);
 
         System.out.println(actual);
+
+        amount = 1_000_000;
+        registered = false;
+        expected = 500;
+
+        actual = service.calculate(amount, registered);
+
+        System.out.println(actual);
+
+        amount = 1000;
+        registered = false;
+        expected = 500;
+
+        actual = service.calculate(amount, registered);
+
+        System.out.println(actual);
     }
 }
+

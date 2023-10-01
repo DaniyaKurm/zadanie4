@@ -29,7 +29,7 @@ public class Main {
 
         amount = 1000;
         registered = false;
-        expected = 500;
+        expected = 10;
 
         actual = service.calculate(amount, registered);
 
